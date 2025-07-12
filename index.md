@@ -1,3 +1,3 @@
 # Online notes 
 
-[SC-300 Notes | EntraID](sc300.html)
+[SC-300 Notes | EntraID](sc300.md)
