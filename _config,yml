@@ -1,3 +1,5 @@
 title: My GitHub Pages Site
 description: A personal website hosted on GitHub Pages.
 theme: jekyll-theme-minimal # Or any other Jekyll theme
+minimal:
+  skin: dark
