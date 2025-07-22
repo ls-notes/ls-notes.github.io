@@ -1,6 +1,6 @@
 # Today I Learned
 
-## Day 1 -- 2025-07-12
+## 2025-07-12
 
 ### how to setup github pages for publishing your notes.
 - first create a repo like : <username>.github.io
@@ -18,3 +18,14 @@ theme: jekyll-theme-minimal # Or any other Jekyll theme
 [My Azure Notes](Azure.md)
 ```
 - make sure to not use any special chars (like '|') in the url description as those maybe a meta character in markdown.
+
+## 2025-07-22
+
+### Powershell treats multi-value string in AD as arrays.
+Eg: If you retreiving a multi-value attribute 'attribute1', it can be queried like below
+```powershell
+$AllADUser | select samAccountName, @{Name='Attribute1'; Expression = {$_.AttributeName -join ";"} }
+```
+
+- references:
+  - https://community.spiceworks.com/t/get-multi-valued-string-from-ad-object/794916/3 
